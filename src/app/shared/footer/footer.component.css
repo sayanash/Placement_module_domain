@@ -1,0 +1,30 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-content nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-content nav a:hover {
+    text-decoration: underline;
+  }
+  
