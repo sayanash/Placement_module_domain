@@ -1,23 +1,25 @@
 <nav class="navbar">
-    <div class="navbar-brand">
-      <a routerLink="/home">MyApp</a>
+  <!-- Left: Logo -->
+  <div class="navbar-left">
+    <a routerLink="/home">
+      <img src="" alt="Logo" class="logo">
+    </a>
+    <div class="logo-text">
+      <h2>Centurion University</h2>
+      <p>Shaping Lives... Empowering Communities...</p>
     </div>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/student-dashboard" *ngIf="isStudent()">Student Dashboard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/admin-dashboard" *ngIf="isAdmin()">Admin Dashboard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/company-dashboard" *ngIf="isCompany()">Company Dashboard</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/profile">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/logout">Logout</a>
-      </li>
-    </ul>
-  </nav>
+  </div>
+
+  <!-- Center: Navigation Links -->
+  <ul class="navbar-center">
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/about">About Us</a></li>
+    <li><a routerLink="/learning">Learning</a></li>
+    <li><a routerLink="/innovation">Contact Us</a></li>
+    <li><a routerLink="/admissions">Login</a></li>
+    <li><a routerLink="/campuses">Sign Up</a></li>
+  </ul>
+
+  <!-- Right: Toll-free, Search, and Login -->
   
+</nav>

@@ -1,35 +1,78 @@
+/* Navbar container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
-  
-  .navbar-brand a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-  }
-  
-  .navbar-nav {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 2px -2px gray;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo and text on the left */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left .logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.navbar-left .logo-text h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.navbar-left .logo-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Navigation links in the center */
+.navbar-center {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-center li {
+  font-size: 16px;
+}
+
+.navbar-center li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-center li a:hover {
+  color: #cc0000; /* Hover color */
+}
+
+/* Right section (toll-free, search, login) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toll-free {
+  font-size: 14px;
+  color: #333;
+}
+
+.search-icon, .login, .menu-icon {
+  color: #333;
+  text-decoration: none;
+}
+
+.search-icon i, .menu-icon i {
+  font-size: 18px;
+}
+
+.search-icon:hover, .login:hover, .menu-icon:hover {
+  color: #cc0000; /* Hover color */
+}
