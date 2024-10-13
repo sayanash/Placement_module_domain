@@ -1,30 +1,51 @@
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+  background-color: #471213; /* Dark background */
+  color: white; /* White text color */
+  padding: 20px; /* Space inside footer */
+  text-align: center; /* Center text */
+  position: fixed; /* Fixed to the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Align to the bottom */
+  z-index: 1000; /* Ensure footer is above other content */
+}
+
+.footer-content {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the footer */
+  padding: 0 15px; /* Horizontal padding */
+}
+
+.footer-content p {
+  margin: 0; /* Remove default margin */
+}
+
+.footer-content nav {
+  display: flex; /* Flexbox for nav items */
+  gap: 15px; /* Space between nav items */
+}
+
+.footer-content nav a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer-content nav a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #ffcc00; /* Change color on hover (adjust as needed) */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center; /* Center items */
   }
-  
   .footer-content nav {
-    display: flex;
-    gap: 15px;
+    margin-top: 10px; /* Space above the nav on small screens */
   }
-  
-  .footer-content nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-content nav a:hover {
-    text-decoration: underline;
-  }
-  
+}

@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 15px 30px;
-  box-shadow: 0 4px 2px -2px gray;
+  box-shadow: 0 4px 2px -2px #124738;
   font-family: 'Arial', sans-serif;
 }
 
@@ -23,13 +23,13 @@
 .navbar-left .logo-text h2 {
   margin: 0;
   font-size: 20px;
-  color: #000;
+  color: #000000;
 }
 
 .navbar-left .logo-text p {
   margin: 0;
   font-size: 12px;
-  color: #888;
+  color: #070707;
 }
 
 /* Navigation links in the center */
@@ -44,7 +44,7 @@
 }
 
 .navbar-center li a {
-  color: black;
+  color: #060606;
   text-decoration: none;
 }
 
@@ -59,20 +59,10 @@
   gap: 15px;
 }
 
-.toll-free {
-  font-size: 14px;
-  color: #333;
-}
+/* Styling for the rounded image */
 
-.search-icon, .login, .menu-icon {
-  color: #333;
-  text-decoration: none;
-}
 
-.search-icon i, .menu-icon i {
-  font-size: 18px;
-}
 
-.search-icon:hover, .login:hover, .menu-icon:hover {
-  color: #cc0000; /* Hover color */
-}
+
+
+
