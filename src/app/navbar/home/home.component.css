@@ -1,8 +1,7 @@
 .home-container {
     background-image: url('home-bg.jpg'); /* Replace with the actual path to your image */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    height: 1100px; /* Full viewport height */
+    margin-top: 10px;
+    height: 500px; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
