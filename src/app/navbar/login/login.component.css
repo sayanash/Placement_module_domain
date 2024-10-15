@@ -1,0 +1,128 @@
+/* Container for the whole login page */
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Section */
+  .login-left {
+    flex: 1;
+  }
+  
+  .login-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  
+  /* Right Section */
+  .login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 5%;
+
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .university-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin: 10px 0;
+    text-align: right;
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .sign-in-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #00449b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #003680;
+  }
+  
+  .sign-up-text {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .sign-up-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .sign-up-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-left, .login-right {
+      flex: none;
+      width: 100%;
+    }
+  }
+  
