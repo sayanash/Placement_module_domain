@@ -6,11 +6,11 @@ import { LoginComponent } from './navbar/login/login.component';
 import { SignupComponent } from './navbar/signup/signup.component';
 import { ContactusComponent } from './navbar/contactus/contactus.component';
 
-export const routes: Routes = [
+export const routes: Routes = [ // Here you export routes, which is an array of route definitions
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'learning', component: LearningComponent },
-  { path: 'contact',component:ContactusComponent},
+  { path: 'contact', component: ContactusComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
