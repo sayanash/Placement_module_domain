@@ -1,13 +1,56 @@
 .home-container {
-    background-image: url('home-bg.jpg'); /* Replace with the actual path to your image */
-    margin-top: 10px;
-    height: 500px; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white; /* Adjust text color for better visibility */
-    text-align: center;
-  }
-  
-  
+  background-image: url("home-bg.jpeg"); /* Replace with the actual path to your image */
+  background-position: center; /* This centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating of the image */
+  background-size: cover; /* Ensures the image covers the container area */
+  margin-top: 10px;
+  height: 792px;
+  width: 1508px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white; /* Adjust text color for better visibility */
+  text-align: center;
+}
+.current {
+  text-align: center;
+  font-size: x-large;
+  font-style:bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-container {
+  padding: 20px;
+}
+
+.current {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.currentstatus {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.currentstatus > div {
+  background-color: #f9f9f9; 
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.currentstatus h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.currentstatus h5 {
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+  color: #007bff;
+}
